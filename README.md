@@ -31,9 +31,11 @@ chmod +x osx_bootstrap.sh
 
 ```bash
 echo "$(whoami)  ALL=(ALL) NOPASSWD: ALL" | sudo tee /private/etc/sudoers.d/$(whoami)
+sudo chown root:wheel /private/etc/sudoers.d/$(whoami)
+sudo chmod 0440 /private/etc/sudoers.d/$(whoami)
 ```
 
-Or edit `/private/etc/sudoers.d/$(whoami)` manually and add the same line. **Only do this on a personal machine you control.**
+Or edit `/private/etc/sudoers.d/$(whoami)` manually, add the same line, and then ensure the file is owned by `root:wheel` with `0440` permissions—otherwise `sudo` will ignore it. **Only do this on a personal machine you control.**
 
 ## Installed Components
 
