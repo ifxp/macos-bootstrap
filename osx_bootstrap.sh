@@ -61,6 +61,8 @@ PACKAGES=(
     fluxcd/tap/flux
     gh
     git
+    go
+    go-statik
     hub
     jq
     kind

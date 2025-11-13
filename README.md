@@ -42,7 +42,7 @@ Or edit `/private/etc/sudoers.d/$(whoami)` manually, add the same line, and then
 ### CLI packages (`PACKAGES` array)
 ```
 ack, age, autoconf, automake, awscli, azure-cli, broot,
-docker-compose, fluxcd/tap/flux, gh, git, hub, jq, kind,
+docker-compose, fluxcd/tap/flux, gh, git, go, go-statik, hub, jq, kind,
 kubernetes-cli, markdown, minikube, node, npm, opentofu,
 podman, pyenv, python, python3, pypy, rename, sops,
 ssh-copy-id, the_silver_searcher, tree, vim, wget, xq,
